@@ -14,8 +14,7 @@
   "files": [
     "scripts",
     "templates",
-    "run.js",
-    "webpack.config.js"
+    "run.js"
   ],
   "dependencies": {
     "assets-webpack-plugin": "^3.4.0",
