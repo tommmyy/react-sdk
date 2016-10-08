@@ -1,12 +1,3 @@
-/**
- * React App SDK (https://github.com/kriasoft/react-app)
- *
- * Copyright © 2015-present Kriasoft, LLC. All rights reserved.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE.txt file in the root directory of this source tree.
- */
-
 /* eslint-disable no-console, global-require */
 
 const fs = require('fs');
@@ -16,13 +7,13 @@ const chalk = require('chalk');
 /**
  * Find an automation script by its name. Given the following list of files:
  *
- *   ./node_modules/react-app-tools/scripts/build.js
- *   ./node_modules/react-app-tools/scripts/start.js
+ *   ./node_modules/react-sdk-tools/scripts/build.js
+ *   ./node_modules/react-sdk-tools/scripts/start.js
  *   ./scripts/start.js
  *
  * It should return:
  *
- *   findScript('build') => './node_modules/react-app-tools/scripts/build.js'
+ *   findScript('build') => './node_modules/react-sdk-tools/scripts/build.js'
  *   findScript('start') => './scripts/start.js'
  *   findScript('foo')   => null
  */
@@ -42,7 +33,7 @@ const findScript = (() => {
         files.push(...fs.readdirSync(path.join(__dirname, 'scripts'))
           .map(file => path.join(path.join(__dirname, 'scripts', file))));
       } catch (err) {
-        console.warn('WARNING: Cannot find \'react-app-tools\' npm module.');
+        console.warn('WARNING: Cannot find \'react-sdk-tools\' npm module.');
       }
     }
     return files.find(x => path.basename(x) === `${name}.js`);
