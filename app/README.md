@@ -1,13 +1,11 @@
-# GEF UI SDK
-
 **CLI tools and templates** for authoring **[React](https://facebook.github.io/react/)** applications with a single dev dependency and zero build/run configuration.
 
 ### TL;DR
 
 ```sh
-$ npm install -g react-sdk
-$ react-sdk new
-$ react-sdk run
+$ npm install -g start-react
+$ start-react new
+$ start-react run
 ```
 
 ### Requirements
@@ -17,17 +15,17 @@ $ react-sdk run
 
 ### Getting Started
 
-Install [`react-sdk`](https://github.com/tommmyy/react-sdk) npm package globally.
+Install [`start-react`](https://www.npmjs.com/package/start-react) npm package globally.
 
 ```sh
-$ npm install -g react-sdk
+$ npm install -g start-react
 ```
 
 Scaffold a new JavaScript application project and launch it by running:
 
 ```sh
-$ react-sdk new
-$ react-sdk run
+$ start-react new
+$ start-react run
 ```
 
 The app should become available at [http://localhost:3000](http://localhost:3000)

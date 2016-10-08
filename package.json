@@ -1,5 +1,5 @@
 {
-  "name": "react-sdk-tools",
+  "name": "start-react-tools",
   "version": "0.0.1",
   "description": "Boilerplate and tooling for JavaScript application development with React",
   "engines": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tommmyy/react-sdk.git"
+    "url": "https://github.com/tommmyy/start-react-tools.git"
   },
   "licence": "MIT",
   "files": [
@@ -60,9 +60,9 @@
     "resolve-url-loader": "^1.6.0"
   },
   "scripts": {
-    "start": "node ./app/bin/react-sdk start --test-sdk",
-    "new": "node ./app/bin/react-sdk new --test-sdk",
-    "build": "node ./app/bin/react-sdk build --test-sdk",
+    "start": "node ./app/bin/start-react start --test-sdk",
+    "new": "node ./app/bin/start-react new --test-sdk",
+    "build": "node ./app/bin/start-react build --test-sdk",
     "test:js": "cross-env NODE_ENV=test BABEL_JEST_STAGE=0 jest --config=./jest.config.json",
     "test:watch": "npm run test:js -- --watch",
     "lint": "npm run lint:eslint",

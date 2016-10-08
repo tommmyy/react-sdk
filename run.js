@@ -33,7 +33,7 @@ const findScript = (() => {
         files.push(...fs.readdirSync(path.join(__dirname, 'scripts'))
           .map(file => path.join(path.join(__dirname, 'scripts', file))));
       } catch (err) {
-        console.warn('WARNING: Cannot find \'react-sdk-tools\' npm module.');
+        console.warn('WARNING: Cannot find \'start-react-tools\' npm module.');
       }
     }
     return files.find(x => path.basename(x) === `${name}.js`);
