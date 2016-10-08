@@ -1,0 +1,44 @@
+{
+  "private": true,
+  "engines": {
+    "node": ">=6",
+    "npm": ">=3.8"
+  },
+  "scripts": {
+    "lint": "npm run lint:eslint && npm run lint:stylelint",
+    "lint:eslint": "eslint --ext .js ./",
+    "lint:stylelint": "echo todostylelint",
+    "test": "npm run lint && npm run test:js",
+    "test:watch": "npm run test:js -- --watch",
+    "test:js": "react-sdk test",
+    "build": "react-sdk build",
+    "start": "react-sdk start"
+  },
+  "dependencies": {
+    "bootstrap-sass": "3.3.7",
+    "classnames": "2.2.5",
+    "keymirror": "^0.1.1",
+    "react": "^15.0.0",
+    "react-dom": "^15.0.0",
+    "react-tap-event-plugin": "^1.0.0",
+    "react-addons-create-fragment": "15.0.0",
+    "react-redux": "4.4.5",
+    "react-router": "2.7.0",
+    "react-router-redux": "4.0.5",
+    "redux": "3.5.2",
+    "redux-thunk": "2.1.0",
+    "ramda": "0.22.1",
+    "react-sdk": "git://github.com/tommmyy/react-sdk.git"
+  },
+  "devDependencies": {
+    "eslint": "3.3.1",
+    "eslint-config-gef": "1.0.0",
+    "eslint-plugin-babel": "3.3.0",
+    "eslint-plugin-react": "6.1.1",
+    "react-hot-loader": "^3.0.0-beta.2",
+    "redux-devtools": "3.3.1",
+    "redux-devtools-dock-monitor": "1.1.1",
+    "redux-devtools-log-monitor": "1.0.11",
+    "redux-logger": "2.6.1"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "react-sdk",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=6",
+    "npm": ">=3.8"
+  },
+  "files": [
+    "bin",
+    "cli.js"
+  ],
+  "bin": {
+    "react-sdk": "./bin/react-sdk.js"
+  }
+}
