@@ -1,6 +1,6 @@
 {
   "name": "start-react",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "node": ">=6",
     "npm": ">=3.8"
@@ -10,6 +10,6 @@
     "cli.js"
   ],
   "bin": {
-    "react-sdk": "./bin/start-react.js"
+    "start-react": "./bin/start-react.js"
   }
 }
