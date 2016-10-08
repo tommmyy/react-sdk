@@ -5,9 +5,9 @@
 ### TL;DR
 
 ```sh
-$ npm install -g gef-sdk
-$ react-app new
-$ react-app run
+$ npm install -g react-sdk
+$ react-sdk new
+$ react-sdk run
 ```
 
 ### Requirements
@@ -20,14 +20,14 @@ $ react-app run
 Install [`react-sdk`](https://github.com/tommmyy/react-sdk) npm package globally.
 
 ```sh
-$ npm install -g react-app
+$ npm install -g react-sdk
 ```
 
 Scaffold a new JavaScript application project and launch it by running:
 
 ```sh
-$ react-app new
-$ react-app run
+$ react-sdk new
+$ react-sdk run
 ```
 
 The app should become available at [http://localhost:3000](http://localhost:3000)
