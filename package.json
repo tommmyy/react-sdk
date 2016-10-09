@@ -1,6 +1,6 @@
 {
   "name": "start-react-tools",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Boilerplate and tooling for JavaScript application development with React",
   "engines": {
     "node": ">=6",

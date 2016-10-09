@@ -48,7 +48,7 @@ function checkIfCurrentWorkingDirectoryIsEmpty() {
 }
 
 function installReactTools() {
-	// Don't install gef-ui-sdk-tools in test mode
+	// Don't install start-react-tools in test mode
 	if (process.env.TEST_SDK === 'true') {
 		return Promise.resolve();
 	}
@@ -63,13 +63,13 @@ function installReactTools() {
 
 	return new Promise((resolve, reject) => {
 		const tagMatch = pkg.version.match(/-([a-z]+)\./); // '1.0.0-beta.2' => 'beta'
-		const module = tagMatch ? `gef-ui-sdk-tools@${tagMatch[1]}` : 'gef-ui-sdk-tools';
+		const module = tagMatch ? `start-react-tools@${tagMatch[1]}` : 'start-react-tools';
 		console.log(`Installing '${module}' from npm... This may take a couple minutes.`);
 
 		const npm = /^win/.test(process.platform) ? 'npm.cmd' : 'npm';
 		const options = { stdio: ['ignore', 'inherit', 'inherit'] };
 
-		spawn(npm, ['install', module, '--save-dev'], options).on('close', code => {
+		spawn(npm, ['install', module, '--save-dev'], options).on('close', (code) => {
 			if (code === 0) {
 				resolve();
 			} else {
@@ -87,7 +87,7 @@ function run(command) {
 
 	// eslint-disable-next-line global-require, import/no-unresolved
 	return require(
-		path.resolve(process.cwd(), './node_modules/gef-ui-sdk-tools/run')
+		path.resolve(process.cwd(), './node_modules/start-react-tools/run')
 	)(command);
 }
 
@@ -132,7 +132,7 @@ if (command === 'new') {
 			// eslint-disable-next-line global-require
 			? require(path.resolve(__dirname, '../scripts/new'))()
 			// eslint-disable-next-line global-require, import/no-unresolved
-			: require(path.resolve(process.cwd(), './node_modules/gef-ui-sdk-tools/scripts/new'))())
+			: require(path.resolve(process.cwd(), './node_modules/start-react-tools/scripts/new'))())
 		)
 		.catch(err => {
 			console.error(process.argv.includes('--verbose') ? err.stack : `ERROR: ${err.message}`);
