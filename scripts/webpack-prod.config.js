@@ -78,7 +78,7 @@ module.exports = {
 		cachedAssets: VERBOSE,
 	},
 	sassLoader: {
-		importer: require(path.resolve(__dirname, '../node_modules/compass-importer')),
+		importer: require('compass-importer'),
 		includePaths: [path.resolve(process.cwd(), './node_modules/')]
 	},
 };
