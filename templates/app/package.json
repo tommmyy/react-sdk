@@ -15,7 +15,6 @@
     "start": "start-react start"
   },
   "dependencies": {
-    "bootstrap-sass": "3.3.7",
     "classnames": "2.2.5",
     "keymirror": "^0.1.1",
     "react": "^15.0.0",
@@ -26,7 +25,7 @@
     "react-redux": "4.4.5",
     "react-router": "2.7.0",
     "react-router-redux": "4.0.5",
-    "start-react": "0.0.4",
+    "start-react": "0.0.5",
     "redux": "3.5.2",
     "redux-devtools": "3.3.1",
     "redux-devtools-dock-monitor": "1.1.1",
@@ -40,6 +39,6 @@
     "eslint-config-react": "git://github.com/tommmyy/eslint-config-react.git",
     "eslint-plugin-babel": "3.3.0",
     "eslint-plugin-react": "6.1.1",
-    "start-react-tools": "0.0.4"
+    "start-react-tools": "0.0.5"
   }
 }
