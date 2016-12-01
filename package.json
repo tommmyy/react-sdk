@@ -1,6 +1,6 @@
 {
   "name": "start-react-tools",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Boilerplate and tooling for JavaScript application development with React",
   "engines": {
     "node": ">=6",
@@ -48,16 +48,17 @@
     "file-loader": "0.9.0",
     "front-matter": "2.1.0",
     "jest": "15.1.1",
+    "json-loader": "0.5.4",
     "ncp": "2.0.0",
     "node-sass": "3.9.0",
     "react-hot-loader": "3.0.0-beta.2",
+    "resolve-url-loader": "1.6.0",
     "sass-loader": "4.0.1",
     "style-loader": "0.13.1",
     "url-loader": "0.5.7",
     "webpack": "1.13.2",
     "webpack-dev-middleware": "1.6.1",
-    "webpack-hot-middleware": "2.12.2",
-    "resolve-url-loader": "1.6.0"
+    "webpack-hot-middleware": "2.12.2"
   },
   "scripts": {
     "start": "node ./app/bin/start-react start --test-sdk",
