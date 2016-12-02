@@ -55,6 +55,10 @@ module.exports = {
 				test: /\.(eot|ttf|wav|mp3)$/,
 				loaders: [require.resolve('file-loader')],
 			},
+			{
+				test: /\.json$/,
+				loader: 'json-loader',
+			},
 		],
 	},
 	resolve: {
