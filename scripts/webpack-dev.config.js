@@ -53,8 +53,9 @@ module.exports = {
 		root: [
 			path.resolve(process.cwd(), './src'),
 			path.resolve(process.cwd(), './node_modules'),
+			path.resolve(process.cwd(), './web_modules'),
 		],
-		modulesDirectories: ['node_modules'],
+		modulesDirectories: ['node_modules', 'web_modules'],
 		extensions: ['', '.webpack.js', '.web.js', '.js', '.json'],
 	},
 	devtool: 'cheap-module-eval-source-map',
