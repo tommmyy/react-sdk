@@ -35,7 +35,7 @@ module.exports = {
 	],
 	output: {
 		path: path.resolve(process.cwd(), './build/public/assets'),
-		publicPath: '/assets/',
+		publicPath: 'assets/',
 		sourcePrefix: '  ',
 	},
 	module: {
